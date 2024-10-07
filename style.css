@@ -1,0 +1,38 @@
+/* Botões redondos e azuis */
+button {
+    background-color: #007bff; /* Azul */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 50px; /* Torna o botão redondo */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Botão de exclusão (vermelho) */
+button.excluir {
+    background-color: #dc3545; /* Cor vermelha */
+    border-radius: 50px;
+}
+
+button.excluir:hover {
+    background-color: #c82333; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Botão de atualizar */
+button.atualizar {
+    background-color: #28a745; /* Verde */
+}
+
+button.atualizar:hover {
+    background-color: #218838; /* Verde mais escuro ao passar o mouse */
+}

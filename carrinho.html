@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Livros Selecionados</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Voltar para a Livraria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrinho">
+        <h2>Seu Carrinho</h2>
+        <div class="livro-container">
+            <!-- Livros selecionados serão renderizados aqui -->
+        </div>
+        <p id="mensagem-vazio"></p>
+        <!-- Botão para atualizar a página do carrinho -->
+        <button class="atualizar" onclick="atualizarCarrinho()">Atualizar Carrinho</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Livraria Peneluc. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="carrinho.js"></script>
+</body>
+</html>
