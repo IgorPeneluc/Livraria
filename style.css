@@ -1,38 +1,80 @@
-/* Botões redondos e azuis */
-button {
+/* Estilo básico do site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E6F0FF; /* Fundo azul claro */
+    height: 100vh;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  header {
+    background-color: #005f99; /* Fundo azul escuro */
+    color: white;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .livro-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .livro {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .livro img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  button {
     background-color: #007bff; /* Azul */
     border: none;
     color: white;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 0;
     cursor: pointer;
-    border-radius: 50px; /* Torna o botão redondo */
+    border-radius: 50px; /* Botão redondo */
     transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3; /* Cor do botão ao passar o mouse */
-}
-
-/* Botão de exclusão (vermelho) */
-button.excluir {
-    background-color: #dc3545; /* Cor vermelha */
-    border-radius: 50px;
-}
-
-button.excluir:hover {
-    background-color: #c82333; /* Vermelho mais escuro ao passar o mouse */
-}
-
-/* Botão de atualizar */
-button.atualizar {
-    background-color: #28a745; /* Verde */
-}
-
-button.atualizar:hover {
-    background-color: #218838; /* Verde mais escuro ao passar o mouse */
-}
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+  }
+  
+  footer {
+    background-color: #005f99;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
