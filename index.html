@@ -4,31 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria Online</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f5f5f5; /* Fundo claro */
+            color: #333; /* Texto escuro */
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF; /* Azul com bom contraste */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #0056b3; /* Azul escuro */
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #004080; /* Azul mais escuro */
+        }
+
+        #livros {
+            padding: 20px;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .livro-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .livro {
+            background-color: #ffffff; /* Fundo branco */
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            max-width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .livro img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .livro h3 {
+            font-size: 1.2em;
+            color: #222; /* Contraste forte */
+            margin-bottom: 5px;
+        }
+
+        .livro p {
+            color: #555; /* Contraste adequado */
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: #28a745; /* Verde com bom contraste */
+            color: #ffffff; /* Texto branco */
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #218838; /* Verde mais escuro */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        button:focus {
+            outline: 2px solid #333; /* Contorno de foco visível */
+            outline-offset: 2px;
+        }
+
+        footer {
+            background-color: #333; /* Fundo escuro */
+            color: #ffffff; /* Texto claro */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Livraria Peneluc</h1>
+        <h1 aria-label="Livraria Peneluc, página principal">Livraria Peneluc</h1>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Livros</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#" aria-label="Ir para a página inicial">Início</a></li>
+                <li><a href="#" aria-label="Ir para a seção de livros">Livros</a></li>
+                <li><a href="#" aria-label="Ir para a página de contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="livros">
-        <h2>Nossos Livros</h2>
-        <div class="livro-container">
-            <!-- Livros serão renderizados aqui dinamicamente -->
+        <h2 aria-label="Seção de nossos livros">Nossos Livros</h2>
+        <div class="livro-container" aria-label="Lista de livros disponíveis">
+            <!-- Livros renderizados dinamicamente serão inseridos aqui -->
         </div>
     </section>
 
     <nav>
         <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="carrinho.html">Ver Carrinho</a></li> <!-- Link para a página do carrinho -->
+            <li><a href="#" aria-label="Ir para a página inicial">Início</a></li>
+            <li><a href="carrinho.html" aria-label="Ver o conteúdo do carrinho">Ver Carrinho</a></li>
         </ul>
     </nav>
 
